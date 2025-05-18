@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "641ac461-6f2b-4425-8415-31b81184c84f",
+		"name": "ToDo Api Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18250741"
+	},
+	"item": [
+		{
+			"name": "Post Todos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"descripcion\":\"\", \"fecha\":\"2025-05-17\", \"estatus\":\"pendiente\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"todos"
+					]
+				},
+				"description": "Crea un registro con los valores en el body en un JSON"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"todos"
+					]
+				},
+				"description": "Obtiene todos los registros de la tabla todos"
+			},
+			"response": []
+		},
+		{
+			"name": "Put Todos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"descripcion\":\"Nuevo texto\", \"fecha\":\"2025-05-18\", \"estatus\":\"completado\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/todos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"todos",
+						"1"
+					]
+				},
+				"description": "Permite actualizar uno o más valores del registro seleccionado por ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Todos",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"en progreso\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/todos/1/estatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"todos",
+						"1",
+						"estatus"
+					]
+				},
+				"description": "Actualiza solo el campo especificado en la URL"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/todos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"todos",
+						"1"
+					]
+				},
+				"description": "Elimina el registro por su ID"
+			},
+			"response": []
+		}
+	]
+}
