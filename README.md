@@ -69,3 +69,18 @@ En caso de datos inválidos, la API devuelve un mensaje de error claro con códi
 ```
 6. La API estará disponible en:
   http://localhost:8080/api/todos
+
+## Colección de Postman
+
+Para facilitar las pruebas de la API, se incluye una colección de Postman con las peticiones preconfiguradas.
+
+[Descargar colección Postman](./ToDo-api-rest.postman_collection.json)
+
+---
+
+Para importar la colección en Postman:
+
+1. Descarga el archivo usando el enlace anterior.  
+2. En Postman, ve a **File > Import**.  
+3. Selecciona el archivo descargado y cárgalo.  
+4. Empieza a probar la API rápidamente sin configurar las peticiones manualmente.
