@@ -1,0 +1,5 @@
+com\Applab\todoapi\demo\repository\ToDoRepository.class
+com\Applab\todoapi\demo\service\TodoService.class
+com\Applab\todoapi\demo\controller\ToDoController.class
+com\Applab\todoapi\demo\entity\ToDo.class
+com\Applab\todoapi\demo\DemoApplication.class
